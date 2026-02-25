@@ -779,9 +779,8 @@
             <div class="atag">Designer · Motion Artist<br/>Brand Builder</div>
             <div class="alinks">
               <div class="alink">🌐 noahscott.com</div>
-              <div class="alink">📸 Instagram</div>
-              <div class="alink">💼 LinkedIn</div>
-              <div class="alink">📸 Instagram</div>
+              <a class="alink" href="https://www.instagram.com/scootsketch/profilecard/?igsh=NXJkcWxyNTF5bzdy" target="_blank"> Instagram</a>
+              <a class="alink" href="www.linkedin.com/in/noah-scott19" target="_blank"> LinkedIn</a>
             </div>
           </div>
         </div>
@@ -847,31 +846,31 @@
       <span class="mi">Tools</span><span class="mi">Actions</span><span class="mi">Help</span>
     </div>
     <div class="tbar">
-      <button class="xbtn xbtn-g" style="font-size:10px;padding:3px 10px;" onclick="dlg('✅ Message sent!\nNoah will get back to you soon.')">📤 Send</button>
+      <button type="submit" form="contact-form" class="xbtn xbtn-g" style="font-size:10px;padding:3px 10px;"> Send</button>
       <div class="tsep"></div>
       <button class="tbtn">📎 Attach</button>
       <button class="tbtn">🖊️ Signature</button>
     </div>
     <div class="wcont">
-      <div class="form-g">
+      <form class="form-g" action="https://formspree.io/f/mlgwapqb" method="POST">
         <div class="fgrid">
           <span class="flbl">To:</span>
-          <input class="finput" value="hello@noahscott.com" readonly style="color:var(--blue);" />
-          <span class="flbl">From:</span>
-          <input class="finput" placeholder="your@email.com" />
-          <span class="flbl">Subject:</span>
-          <input class="finput" placeholder="Let's work together!" />
-        </div>
-        <div style="border-top:1px solid #ACA899;padding-top:10px;">
-          <textarea class="finput ftarea" placeholder="Hi Noah, I'd love to discuss a project..."></textarea>
-        </div>
-        <div class="fbtns">
-          <button class="dbtn" onclick="dlg('Message cleared.')">🗑️ Discard</button>
-          <button class="xbtn xbtn-r" style="font-size:10px;padding:4px 14px;" onclick="dlg('✅ Message sent!\nNoah will reply within 1–2 business days.')">📤 Send Message</button>
-        </div>
+        <input class="finput" value="hello@noahscott.com" readonly style="color:var(--blue);" />
+        <span class="flbl">From:</span>
+        <input class="finput" type="email" name="email" placeholder="your@email.com" required />
+        <span class="flbl">Subject:</span>
+        <input class="finput" type="text" name="subject" placeholder="Let's work together!" required />
       </div>
-    </div>
+      <div style="border-top:1px solid #ACA899;padding-top:10px;">
+        <textarea class="finput ftarea" name="message" placeholder="Hi Noah, I'd love to discuss a project..." required></textarea>
+      </div>
+      <div class="fbtns">
+         <button type="reset" class="dbtn">🗑️ Discard</button>
+        <button type="submit" class="xbtn xbtn-r" style="font-size:10px;padding:4px 14px;">📤 Send Message</button>
+      </div>
+    </form>
   </div>
+ </div>
 
 </div><!-- /desktop -->
 
