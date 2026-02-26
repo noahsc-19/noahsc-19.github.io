@@ -1,0 +1,1074 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Noah Scott — Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet" />
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --red: #CC0000;
+      --blue: #0033CC;
+      --yellow: #FFD700;
+      --xp-title: linear-gradient(180deg, #4A90E2 0%, #1F5BBA 40%, #1A4FA0 100%);
+      --xp-btn: linear-gradient(180deg, #EEF3FA 0%, #D4E3F5 45%, #C0D6F0 50%, #D0E4F8 100%);
+      --xp-btn-h: linear-gradient(180deg, #F5F9FF 0%, #DDEEFF 45%, #C8DAEE 50%, #D8ECFF 100%);
+      --silver: #ECE9D8;
+      --taskbar: linear-gradient(180deg, #245EDC 0%, #1A45B5 50%, #1640AC 100%);
+    }
+
+    body {
+      font-family: Tahoma, 'MS Sans Serif', sans-serif;
+      font-size: 11px;
+      background: #0A246A;
+      min-height: 100vh;
+      overflow-x: hidden;
+      padding-bottom: 42px;
+      cursor: url("%3Csvg%20xmlns%3D%27http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%27%20width%3D%2748%27%20height%3D%2760%27%20viewBox%3D%270%200%2048%2060%27%3E%3Crect%20x%3D%270%27%20y%3D%270%27%20width%3D%274%27%20height%3D%274%27%20fill%3D%27%23000000%27%2F%3E%3Crect%20x%3D%270%27%20y%3D%274%27%20width%3D%274%27%20height%3D%274%27%20fill%3D%27%23000000%27%2F%3E%3Crect%20x%3D%274%27%20y%3D%274%27%20width%3D%274%27%20height%3D%274%27%20fill%3D%27%23000000%27%2F%3E%3Crect%20x%3D%270%27%20y%3D%278%27%20width%3D%274%27%20height%3D%274%27%20fill%3D%27%23000000%27%2F%3E%3Crect%20x%3D%274%27%20y%3D%278%27%20width%3D%274%27%20height%3D%274%27%20fill%3D%27%23ffffff%27%2F%3E%3Crect%20x%3D%278%27%20y%3D%278%27%20width%3D%274%27%20height%3D%274%27%20fill%3D%27%23000000%27%2F%3E%3Crect%20x%3D%270%27%20y%3D%2712%27%20width%3D%274%27%20height%3D%274%27%20fill%3D%27%23000000%27%2F%3E%3Crect%20x%3D%274%27%20y%3D%2712%27%20width%3D%274%27%20height%3D%274%27%20fill%3D%27%23ffffff%27%2F%3E%3Crect%20x%3D%278%27%20y%3D%2712%27%20width%3D%274%27%20height%3D%274%27%20fill%3D%27%23ffffff%27%2F%3E%3Crect%20x%3D%2712%27%20y%3D%2712%27%20width%3D%274%27%20height%3D%274%27%20fill%3D%27%23000000%27%2F%3E%3Crect%20x%3D%270%27%20y%3D%2716%27%20width%3D%274%27%20height%3D%274%27%20fill%3D%27%23000000%27%2F%3E%3Crect%20x%3D%274%27%20y%3D%2716%27%20width%3D%274%27%20height%3D%274%27%20fill%3D%27%23ffffff%27%2F%3E%3Crect%20x%3D%278%27%20y%3D%2716%27%20width%3D%274%27%20height%3D%274%27%20fill%3D%27%23ffffff%27%2F%3E%3Crect%20x%3D%2712%27%20y%3D%2716%27%20width%3D%274%27%20height%3D%274%27%20fill%3D%27%23ffffff%27%2F%3E%3Crect%20x%3D%2716%27%20y%3D%2716%27%20width%3D%274%27%20height%3D%274%27%20fill%3D%27%23000000%27%2F%3E%3Crect%20x%3D%270%27%20y%3D%2720%27%20width%3D%274%27%20height%3D%274%27%20fill%3D%27%23000000%27%2F%3E%3Crect%20x%3D%274%27%20y%3D%2720%27%20width%3D%274%27%20height%3D%274%27%20fill%3D%27%23ffffff%27%2F%3E%3Crect%20x%3D%278%27%20y%3D%2720%27%20width%3D%274%27%20height%3D%274%27%20fill%3D%27%23ffffff%27%2F%3E%3Crect%20x%3D%2712%27%20y%3D%2720%27%20width%3D%274%27%20height%3D%274%27%20fill%3D%27%23ffffff%27%2F%3E%3Crect%20x%3D%2716%27%20y%3D%2720%27%20width%3D%274%27%20height%3D%274%27%20fill%3D%27%23ffffff%27%2F%3E%3Crect%20x%3D%2720%27%20y%3D%2720%27%20width%3D%274%27%20height%3D%274%27%20fill%3D%27%23000000%27%2F%3E%3Crect%20x%3D%270%27%20y%3D%2724%27%20width%3D%274%27%20height%3D%274%27%20fill%3D%27%23000000%27%2F%3E%3Crect%20x%3D%274%27%20y%3D%2724%27%20width%3D%274%27%20height%3D%274%27%20fill%3D%27%23ffffff%27%2F%3E%3Crect%20x%3D%278%27%20y%3D%2724%27%20width%3D%274%27%20height%3D%274%27%20fill%3D%27%23ffffff%27%2F%3E%3Crect%20x%3D%2712%27%20y%3D%2724%27%20width%3D%274%27%20height%3D%274%27%20fill%3D%27%23ffffff%27%2F%3E%3Crect%20x%3D%2716%27%20y%3D%2724%27%20width%3D%274%27%20height%3D%274%27%20fill%3D%27%23ffffff%27%2F%3E%3Crect%20x%3D%2720%27%20y%3D%2724%27%20width%3D%274%27%20height%3D%274%27%20fill%3D%27%23ffffff%27%2F%3E%3Crect%20x%3D%2724%27%20y%3D%2724%27%20width%3D%274%27%20height%3D%274%27%20fill%3D%27%23000000%27%2F%3E%3Crect%20x%3D%270%27%20y%3D%2728%27%20width%3D%274%27%20height%3D%274%27%20fill%3D%27%23000000%27%2F%3E%3Crect%20x%3D%274%27%20y%3D%2728%27%20width%3D%274%27%20height%3D%274%27%20fill%3D%27%23ffffff%27%2F%3E%3Crect%20x%3D%278%27%20y%3D%2728%27%20width%3D%274%27%20height%3D%274%27%20fill%3D%27%23ffffff%27%2F%3E%3Crect%20x%3D%2712%27%20y%3D%2728%27%20width%3D%274%27%20height%3D%274%27%20fill%3D%27%23ffffff%27%2F%3E%3Crect%20x%3D%2716%27%20y%3D%2728%27%20width%3D%274%27%20height%3D%274%27%20fill%3D%27%23ffffff%27%2F%3E%3Crect%20x%3D%2720%27%20y%3D%2728%27%20width%3D%274%27%20height%3D%274%27%20fill%3D%27%23ffffff%27%2F%3E%3Crect%20x%3D%2724%27%20y%3D%2728%27%20width%3D%274%27%20height%3D%274%27%20fill%3D%27%23ffffff%27%2F%3E%3Crect%20x%3D%2728%27%20y%3D%2728%27%20width%3D%274%27%20height%3D%274%27%20fill%3D%27%23000000%27%2F%3E%3Crect%20x%3D%270%27%20y%3D%2732%27%20width%3D%274%27%20height%3D%274%27%20fill%3D%27%23000000%27%2F%3E%3Crect%20x%3D%274%27%20y%3D%2732%27%20width%3D%274%27%20height%3D%274%27%20fill%3D%27%23ffffff%27%2F%3E%3Crect%20x%3D%278%27%20y%3D%2732%27%20width%3D%274%27%20height%3D%274%27%20fill%3D%27%23ffffff%27%2F%3E%3Crect%20x%3D%2712%27%20y%3D%2732%27%20width%3D%274%27%20height%3D%274%27%20fill%3D%27%23ffffff%27%2F%3E%3Crect%20x%3D%2716%27%20y%3D%2732%27%20width%3D%274%27%20height%3D%274%27%20fill%3D%27%23ffffff%27%2F%3E%3Crect%20x%3D%2720%27%20y%3D%2732%27%20width%3D%274%27%20height%3D%274%27%20fill%3D%27%23ffffff%27%2F%3E%3Crect%20x%3D%2724%27%20y%3D%2732%27%20width%3D%274%27%20height%3D%274%27%20fill%3D%27%23ffffff%27%2F%3E%3Crect%20x%3D%2728%27%20y%3D%2732%27%20width%3D%274%27%20height%3D%274%27%20fill%3D%27%23ffffff%27%2F%3E%3Crect%20x%3D%2732%27%20y%3D%2732%27%20width%3D%274%27%20height%3D%274%27%20fill%3D%27%23000000%27%2F%3E%3Crect%20x%3D%270%27%20y%3D%2736%27%20width%3D%274%27%20height%3D%274%27%20fill%3D%27%23000000%27%2F%3E%3Crect%20x%3D%274%27%20y%3D%2736%27%20width%3D%274%27%20height%3D%274%27%20fill%3D%27%23ffffff%27%2F%3E%3Crect%20x%3D%278%27%20y%3D%2736%27%20width%3D%274%27%20height%3D%274%27%20fill%3D%27%23ffffff%27%2F%3E%3Crect%20x%3D%2712%27%20y%3D%2736%27%20width%3D%274%27%20height%3D%274%27%20fill%3D%27%23ffffff%27%2F%3E%3Crect%20x%3D%2716%27%20y%3D%2736%27%20width%3D%274%27%20height%3D%274%27%20fill%3D%27%23ffffff%27%2F%3E%3Crect%20x%3D%2720%27%20y%3D%2736%27%20width%3D%274%27%20height%3D%274%27%20fill%3D%27%23ffffff%27%2F%3E%3Crect%20x%3D%2724%27%20y%3D%2736%27%20width%3D%274%27%20height%3D%274%27%20fill%3D%27%23ffffff%27%2F%3E%3Crect%20x%3D%2728%27%20y%3D%2736%27%20width%3D%274%27%20height%3D%274%27%20fill%3D%27%23ffffff%27%2F%3E%3Crect%20x%3D%2732%27%20y%3D%2736%27%20width%3D%274%27%20height%3D%274%27%20fill%3D%27%23ffffff%27%2F%3E%3Crect%20x%3D%2736%27%20y%3D%2736%27%20width%3D%274%27%20height%3D%274%27%20fill%3D%27%23000000%27%2F%3E%3Crect%20x%3D%270%27%20y%3D%2740%27%20width%3D%274%27%20height%3D%274%27%20fill%3D%27%23000000%27%2F%3E%3Crect%20x%3D%274%27%20y%3D%2740%27%20width%3D%274%27%20height%3D%274%27%20fill%3D%27%23ffffff%27%2F%3E%3Crect%20x%3D%278%27%20y%3D%2740%27%20width%3D%274%27%20height%3D%274%27%20fill%3D%27%23ffffff%27%2F%3E%3Crect%20x%3D%2712%27%20y%3D%2740%27%20width%3D%274%27%20height%3D%274%27%20fill%3D%27%23ffffff%27%2F%3E%3Crect%20x%3D%2716%27%20y%3D%2740%27%20width%3D%274%27%20height%3D%274%27%20fill%3D%27%23ffffff%27%2F%3E%3Crect%20x%3D%2720%27%20y%3D%2740%27%20width%3D%274%27%20height%3D%274%27%20fill%3D%27%23ffffff%27%2F%3E%3Crect%20x%3D%2724%27%20y%3D%2740%27%20width%3D%274%27%20height%3D%274%27%20fill%3D%27%23000000%27%2F%3E%3Crect%20x%3D%2728%27%20y%3D%2740%27%20width%3D%274%27%20height%3D%274%27%20fill%3D%27%23000000%27%2F%3E%3Crect%20x%3D%2732%27%20y%3D%2740%27%20width%3D%274%27%20height%3D%274%27%20fill%3D%27%23000000%27%2F%3E%3Crect%20x%3D%2736%27%20y%3D%2740%27%20width%3D%274%27%20height%3D%274%27%20fill%3D%27%23000000%27%2F%3E%3Crect%20x%3D%270%27%20y%3D%2744%27%20width%3D%274%27%20height%3D%274%27%20fill%3D%27%23000000%27%2F%3E%3Crect%20x%3D%274%27%20y%3D%2744%27%20width%3D%274%27%20height%3D%274%27%20fill%3D%27%23ffffff%27%2F%3E%3Crect%20x%3D%278%27%20y%3D%2744%27%20width%3D%274%27%20height%3D%274%27%20fill%3D%27%23ffffff%27%2F%3E%3Crect%20x%3D%2712%27%20y%3D%2744%27%20width%3D%274%27%20height%3D%274%27%20fill%3D%27%23ffffff%27%2F%3E%3Crect%20x%3D%2716%27%20y%3D%2744%27%20width%3D%274%27%20height%3D%274%27%20fill%3D%27%23000000%27%2F%3E%3Crect%20x%3D%2720%27%20y%3D%2744%27%20width%3D%274%27%20height%3D%274%27%20fill%3D%27%23ffffff%27%2F%3E%3Crect%20x%3D%2724%27%20y%3D%2744%27%20width%3D%274%27%20height%3D%274%27%20fill%3D%27%23ffffff%27%2F%3E%3Crect%20x%3D%2728%27%20y%3D%2744%27%20width%3D%274%27%20height%3D%274%27%20fill%3D%27%23000000%27%2F%3E%3Crect%20x%3D%270%27%20y%3D%2748%27%20width%3D%274%27%20height%3D%274%27%20fill%3D%27%23000000%27%2F%3E%3Crect%20x%3D%274%27%20y%3D%2748%27%20width%3D%274%27%20height%3D%274%27%20fill%3D%27%23ffffff%27%2F%3E%3Crect%20x%3D%278%27%20y%3D%2748%27%20width%3D%274%27%20height%3D%274%27%20fill%3D%27%23ffffff%27%2F%3E%3Crect%20x%3D%2712%27%20y%3D%2748%27%20width%3D%274%27%20height%3D%274%27%20fill%3D%27%23000000%27%2F%3E%3Crect%20x%3D%2720%27%20y%3D%2748%27%20width%3D%274%27%20height%3D%274%27%20fill%3D%27%23000000%27%2F%3E%3Crect%20x%3D%2724%27%20y%3D%2748%27%20width%3D%274%27%20height%3D%274%27%20fill%3D%27%23ffffff%27%2F%3E%3Crect%20x%3D%2728%27%20y%3D%2748%27%20width%3D%274%27%20height%3D%274%27%20fill%3D%27%23ffffff%27%2F%3E%3Crect%20x%3D%2732%27%20y%3D%2748%27%20width%3D%274%27%20height%3D%274%27%20fill%3D%27%23000000%27%2F%3E%3Crect%20x%3D%270%27%20y%3D%2752%27%20width%3D%274%27%20height%3D%274%27%20fill%3D%27%23000000%27%2F%3E%3Crect%20x%3D%274%27%20y%3D%2752%27%20width%3D%274%27%20height%3D%274%27%20fill%3D%27%23ffffff%27%2F%3E%3Crect%20x%3D%278%27%20y%3D%2752%27%20width%3D%274%27%20height%3D%274%27%20fill%3D%27%23000000%27%2F%3E%3Crect%20x%3D%2720%27%20y%3D%2752%27%20width%3D%274%27%20height%3D%274%27%20fill%3D%27%23000000%27%2F%3E%3Crect%20x%3D%2724%27%20y%3D%2752%27%20width%3D%274%27%20height%3D%274%27%20fill%3D%27%23ffffff%27%2F%3E%3Crect%20x%3D%2728%27%20y%3D%2752%27%20width%3D%274%27%20height%3D%274%27%20fill%3D%27%23ffffff%27%2F%3E%3Crect%20x%3D%2732%27%20y%3D%2752%27%20width%3D%274%27%20height%3D%274%27%20fill%3D%27%23000000%27%2F%3E%3Crect%20x%3D%270%27%20y%3D%2756%27%20width%3D%274%27%20height%3D%274%27%20fill%3D%27%23000000%27%2F%3E%3Crect%20x%3D%274%27%20y%3D%2756%27%20width%3D%274%27%20height%3D%274%27%20fill%3D%27%23000000%27%2F%3E%3Crect%20x%3D%2720%27%20y%3D%2756%27%20width%3D%274%27%20height%3D%274%27%20fill%3D%27%23000000%27%2F%3E%3Crect%20x%3D%2724%27%20y%3D%2756%27%20width%3D%274%27%20height%3D%274%27%20fill%3D%27%23000000%27%2F%3E%3Crect%20x%3D%2728%27%20y%3D%2756%27%20width%3D%274%27%20height%3D%274%27%20fill%3D%27%23000000%27%2F%3E%3Crect%20x%3D%2732%27%20y%3D%2756%27%20width%3D%274%27%20height%3D%274%27%20fill%3D%27%23000000%27%2F%3E%3C%2Fsvg%3E") 0 0, default;
+    }
+    button, .wbtn, .mi, .tbtn, .pitem, .ptile, .d-icon, .alink, .twin, .start, .ago, .dbtn, .xbtn {
+      cursor: url("%3Csvg%20xmlns%3D%27http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%27%20width%3D%2748%27%20height%3D%2760%27%20viewBox%3D%270%200%2048%2060%27%3E%3Crect%20x%3D%270%27%20y%3D%270%27%20width%3D%274%27%20height%3D%274%27%20fill%3D%27%23000000%27%2F%3E%3Crect%20x%3D%270%27%20y%3D%274%27%20width%3D%274%27%20height%3D%274%27%20fill%3D%27%23000000%27%2F%3E%3Crect%20x%3D%274%27%20y%3D%274%27%20width%3D%274%27%20height%3D%274%27%20fill%3D%27%23000000%27%2F%3E%3Crect%20x%3D%270%27%20y%3D%278%27%20width%3D%274%27%20height%3D%274%27%20fill%3D%27%23000000%27%2F%3E%3Crect%20x%3D%274%27%20y%3D%278%27%20width%3D%274%27%20height%3D%274%27%20fill%3D%27%23ffffff%27%2F%3E%3Crect%20x%3D%278%27%20y%3D%278%27%20width%3D%274%27%20height%3D%274%27%20fill%3D%27%23000000%27%2F%3E%3Crect%20x%3D%270%27%20y%3D%2712%27%20width%3D%274%27%20height%3D%274%27%20fill%3D%27%23000000%27%2F%3E%3Crect%20x%3D%274%27%20y%3D%2712%27%20width%3D%274%27%20height%3D%274%27%20fill%3D%27%23ffffff%27%2F%3E%3Crect%20x%3D%278%27%20y%3D%2712%27%20width%3D%274%27%20height%3D%274%27%20fill%3D%27%23ffffff%27%2F%3E%3Crect%20x%3D%2712%27%20y%3D%2712%27%20width%3D%274%27%20height%3D%274%27%20fill%3D%27%23000000%27%2F%3E%3Crect%20x%3D%270%27%20y%3D%2716%27%20width%3D%274%27%20height%3D%274%27%20fill%3D%27%23000000%27%2F%3E%3Crect%20x%3D%274%27%20y%3D%2716%27%20width%3D%274%27%20height%3D%274%27%20fill%3D%27%23ffffff%27%2F%3E%3Crect%20x%3D%278%27%20y%3D%2716%27%20width%3D%274%27%20height%3D%274%27%20fill%3D%27%23ffffff%27%2F%3E%3Crect%20x%3D%2712%27%20y%3D%2716%27%20width%3D%274%27%20height%3D%274%27%20fill%3D%27%23ffffff%27%2F%3E%3Crect%20x%3D%2716%27%20y%3D%2716%27%20width%3D%274%27%20height%3D%274%27%20fill%3D%27%23000000%27%2F%3E%3Crect%20x%3D%270%27%20y%3D%2720%27%20width%3D%274%27%20height%3D%274%27%20fill%3D%27%23000000%27%2F%3E%3Crect%20x%3D%274%27%20y%3D%2720%27%20width%3D%274%27%20height%3D%274%27%20fill%3D%27%23ffffff%27%2F%3E%3Crect%20x%3D%278%27%20y%3D%2720%27%20width%3D%274%27%20height%3D%274%27%20fill%3D%27%23ffffff%27%2F%3E%3Crect%20x%3D%2712%27%20y%3D%2720%27%20width%3D%274%27%20height%3D%274%27%20fill%3D%27%23ffffff%27%2F%3E%3Crect%20x%3D%2716%27%20y%3D%2720%27%20width%3D%274%27%20height%3D%274%27%20fill%3D%27%23ffffff%27%2F%3E%3Crect%20x%3D%2720%27%20y%3D%2720%27%20width%3D%274%27%20height%3D%274%27%20fill%3D%27%23000000%27%2F%3E%3Crect%20x%3D%270%27%20y%3D%2724%27%20width%3D%274%27%20height%3D%274%27%20fill%3D%27%23000000%27%2F%3E%3Crect%20x%3D%274%27%20y%3D%2724%27%20width%3D%274%27%20height%3D%274%27%20fill%3D%27%23ffffff%27%2F%3E%3Crect%20x%3D%278%27%20y%3D%2724%27%20width%3D%274%27%20height%3D%274%27%20fill%3D%27%23ffffff%27%2F%3E%3Crect%20x%3D%2712%27%20y%3D%2724%27%20width%3D%274%27%20height%3D%274%27%20fill%3D%27%23ffffff%27%2F%3E%3Crect%20x%3D%2716%27%20y%3D%2724%27%20width%3D%274%27%20height%3D%274%27%20fill%3D%27%23ffffff%27%2F%3E%3Crect%20x%3D%2720%27%20y%3D%2724%27%20width%3D%274%27%20height%3D%274%27%20fill%3D%27%23ffffff%27%2F%3E%3Crect%20x%3D%2724%27%20y%3D%2724%27%20width%3D%274%27%20height%3D%274%27%20fill%3D%27%23000000%27%2F%3E%3Crect%20x%3D%270%27%20y%3D%2728%27%20width%3D%274%27%20height%3D%274%27%20fill%3D%27%23000000%27%2F%3E%3Crect%20x%3D%274%27%20y%3D%2728%27%20width%3D%274%27%20height%3D%274%27%20fill%3D%27%23ffffff%27%2F%3E%3Crect%20x%3D%278%27%20y%3D%2728%27%20width%3D%274%27%20height%3D%274%27%20fill%3D%27%23ffffff%27%2F%3E%3Crect%20x%3D%2712%27%20y%3D%2728%27%20width%3D%274%27%20height%3D%274%27%20fill%3D%27%23ffffff%27%2F%3E%3Crect%20x%3D%2716%27%20y%3D%2728%27%20width%3D%274%27%20height%3D%274%27%20fill%3D%27%23ffffff%27%2F%3E%3Crect%20x%3D%2720%27%20y%3D%2728%27%20width%3D%274%27%20height%3D%274%27%20fill%3D%27%23ffffff%27%2F%3E%3Crect%20x%3D%2724%27%20y%3D%2728%27%20width%3D%274%27%20height%3D%274%27%20fill%3D%27%23ffffff%27%2F%3E%3Crect%20x%3D%2728%27%20y%3D%2728%27%20width%3D%274%27%20height%3D%274%27%20fill%3D%27%23000000%27%2F%3E%3Crect%20x%3D%270%27%20y%3D%2732%27%20width%3D%274%27%20height%3D%274%27%20fill%3D%27%23000000%27%2F%3E%3Crect%20x%3D%274%27%20y%3D%2732%27%20width%3D%274%27%20height%3D%274%27%20fill%3D%27%23ffffff%27%2F%3E%3Crect%20x%3D%278%27%20y%3D%2732%27%20width%3D%274%27%20height%3D%274%27%20fill%3D%27%23ffffff%27%2F%3E%3Crect%20x%3D%2712%27%20y%3D%2732%27%20width%3D%274%27%20height%3D%274%27%20fill%3D%27%23ffffff%27%2F%3E%3Crect%20x%3D%2716%27%20y%3D%2732%27%20width%3D%274%27%20height%3D%274%27%20fill%3D%27%23ffffff%27%2F%3E%3Crect%20x%3D%2720%27%20y%3D%2732%27%20width%3D%274%27%20height%3D%274%27%20fill%3D%27%23ffffff%27%2F%3E%3Crect%20x%3D%2724%27%20y%3D%2732%27%20width%3D%274%27%20height%3D%274%27%20fill%3D%27%23ffffff%27%2F%3E%3Crect%20x%3D%2728%27%20y%3D%2732%27%20width%3D%274%27%20height%3D%274%27%20fill%3D%27%23ffffff%27%2F%3E%3Crect%20x%3D%2732%27%20y%3D%2732%27%20width%3D%274%27%20height%3D%274%27%20fill%3D%27%23000000%27%2F%3E%3Crect%20x%3D%270%27%20y%3D%2736%27%20width%3D%274%27%20height%3D%274%27%20fill%3D%27%23000000%27%2F%3E%3Crect%20x%3D%274%27%20y%3D%2736%27%20width%3D%274%27%20height%3D%274%27%20fill%3D%27%23ffffff%27%2F%3E%3Crect%20x%3D%278%27%20y%3D%2736%27%20width%3D%274%27%20height%3D%274%27%20fill%3D%27%23ffffff%27%2F%3E%3Crect%20x%3D%2712%27%20y%3D%2736%27%20width%3D%274%27%20height%3D%274%27%20fill%3D%27%23ffffff%27%2F%3E%3Crect%20x%3D%2716%27%20y%3D%2736%27%20width%3D%274%27%20height%3D%274%27%20fill%3D%27%23ffffff%27%2F%3E%3Crect%20x%3D%2720%27%20y%3D%2736%27%20width%3D%274%27%20height%3D%274%27%20fill%3D%27%23ffffff%27%2F%3E%3Crect%20x%3D%2724%27%20y%3D%2736%27%20width%3D%274%27%20height%3D%274%27%20fill%3D%27%23ffffff%27%2F%3E%3Crect%20x%3D%2728%27%20y%3D%2736%27%20width%3D%274%27%20height%3D%274%27%20fill%3D%27%23ffffff%27%2F%3E%3Crect%20x%3D%2732%27%20y%3D%2736%27%20width%3D%274%27%20height%3D%274%27%20fill%3D%27%23ffffff%27%2F%3E%3Crect%20x%3D%2736%27%20y%3D%2736%27%20width%3D%274%27%20height%3D%274%27%20fill%3D%27%23000000%27%2F%3E%3Crect%20x%3D%270%27%20y%3D%2740%27%20width%3D%274%27%20height%3D%274%27%20fill%3D%27%23000000%27%2F%3E%3Crect%20x%3D%274%27%20y%3D%2740%27%20width%3D%274%27%20height%3D%274%27%20fill%3D%27%23ffffff%27%2F%3E%3Crect%20x%3D%278%27%20y%3D%2740%27%20width%3D%274%27%20height%3D%274%27%20fill%3D%27%23ffffff%27%2F%3E%3Crect%20x%3D%2712%27%20y%3D%2740%27%20width%3D%274%27%20height%3D%274%27%20fill%3D%27%23ffffff%27%2F%3E%3Crect%20x%3D%2716%27%20y%3D%2740%27%20width%3D%274%27%20height%3D%274%27%20fill%3D%27%23ffffff%27%2F%3E%3Crect%20x%3D%2720%27%20y%3D%2740%27%20width%3D%274%27%20height%3D%274%27%20fill%3D%27%23ffffff%27%2F%3E%3Crect%20x%3D%2724%27%20y%3D%2740%27%20width%3D%274%27%20height%3D%274%27%20fill%3D%27%23000000%27%2F%3E%3Crect%20x%3D%2728%27%20y%3D%2740%27%20width%3D%274%27%20height%3D%274%27%20fill%3D%27%23000000%27%2F%3E%3Crect%20x%3D%2732%27%20y%3D%2740%27%20width%3D%274%27%20height%3D%274%27%20fill%3D%27%23000000%27%2F%3E%3Crect%20x%3D%2736%27%20y%3D%2740%27%20width%3D%274%27%20height%3D%274%27%20fill%3D%27%23000000%27%2F%3E%3Crect%20x%3D%270%27%20y%3D%2744%27%20width%3D%274%27%20height%3D%274%27%20fill%3D%27%23000000%27%2F%3E%3Crect%20x%3D%274%27%20y%3D%2744%27%20width%3D%274%27%20height%3D%274%27%20fill%3D%27%23ffffff%27%2F%3E%3Crect%20x%3D%278%27%20y%3D%2744%27%20width%3D%274%27%20height%3D%274%27%20fill%3D%27%23ffffff%27%2F%3E%3Crect%20x%3D%2712%27%20y%3D%2744%27%20width%3D%274%27%20height%3D%274%27%20fill%3D%27%23ffffff%27%2F%3E%3Crect%20x%3D%2716%27%20y%3D%2744%27%20width%3D%274%27%20height%3D%274%27%20fill%3D%27%23000000%27%2F%3E%3Crect%20x%3D%2720%27%20y%3D%2744%27%20width%3D%274%27%20height%3D%274%27%20fill%3D%27%23ffffff%27%2F%3E%3Crect%20x%3D%2724%27%20y%3D%2744%27%20width%3D%274%27%20height%3D%274%27%20fill%3D%27%23ffffff%27%2F%3E%3Crect%20x%3D%2728%27%20y%3D%2744%27%20width%3D%274%27%20height%3D%274%27%20fill%3D%27%23000000%27%2F%3E%3Crect%20x%3D%270%27%20y%3D%2748%27%20width%3D%274%27%20height%3D%274%27%20fill%3D%27%23000000%27%2F%3E%3Crect%20x%3D%274%27%20y%3D%2748%27%20width%3D%274%27%20height%3D%274%27%20fill%3D%27%23ffffff%27%2F%3E%3Crect%20x%3D%278%27%20y%3D%2748%27%20width%3D%274%27%20height%3D%274%27%20fill%3D%27%23ffffff%27%2F%3E%3Crect%20x%3D%2712%27%20y%3D%2748%27%20width%3D%274%27%20height%3D%274%27%20fill%3D%27%23000000%27%2F%3E%3Crect%20x%3D%2720%27%20y%3D%2748%27%20width%3D%274%27%20height%3D%274%27%20fill%3D%27%23000000%27%2F%3E%3Crect%20x%3D%2724%27%20y%3D%2748%27%20width%3D%274%27%20height%3D%274%27%20fill%3D%27%23ffffff%27%2F%3E%3Crect%20x%3D%2728%27%20y%3D%2748%27%20width%3D%274%27%20height%3D%274%27%20fill%3D%27%23ffffff%27%2F%3E%3Crect%20x%3D%2732%27%20y%3D%2748%27%20width%3D%274%27%20height%3D%274%27%20fill%3D%27%23000000%27%2F%3E%3Crect%20x%3D%270%27%20y%3D%2752%27%20width%3D%274%27%20height%3D%274%27%20fill%3D%27%23000000%27%2F%3E%3Crect%20x%3D%274%27%20y%3D%2752%27%20width%3D%274%27%20height%3D%274%27%20fill%3D%27%23ffffff%27%2F%3E%3Crect%20x%3D%278%27%20y%3D%2752%27%20width%3D%274%27%20height%3D%274%27%20fill%3D%27%23000000%27%2F%3E%3Crect%20x%3D%2720%27%20y%3D%2752%27%20width%3D%274%27%20height%3D%274%27%20fill%3D%27%23000000%27%2F%3E%3Crect%20x%3D%2724%27%20y%3D%2752%27%20width%3D%274%27%20height%3D%274%27%20fill%3D%27%23ffffff%27%2F%3E%3Crect%20x%3D%2728%27%20y%3D%2752%27%20width%3D%274%27%20height%3D%274%27%20fill%3D%27%23ffffff%27%2F%3E%3Crect%20x%3D%2732%27%20y%3D%2752%27%20width%3D%274%27%20height%3D%274%27%20fill%3D%27%23000000%27%2F%3E%3Crect%20x%3D%270%27%20y%3D%2756%27%20width%3D%274%27%20height%3D%274%27%20fill%3D%27%23000000%27%2F%3E%3Crect%20x%3D%274%27%20y%3D%2756%27%20width%3D%274%27%20height%3D%274%27%20fill%3D%27%23000000%27%2F%3E%3Crect%20x%3D%2720%27%20y%3D%2756%27%20width%3D%274%27%20height%3D%274%27%20fill%3D%27%23000000%27%2F%3E%3Crect%20x%3D%2724%27%20y%3D%2756%27%20width%3D%274%27%20height%3D%274%27%20fill%3D%27%23000000%27%2F%3E%3Crect%20x%3D%2728%27%20y%3D%2756%27%20width%3D%274%27%20height%3D%274%27%20fill%3D%27%23000000%27%2F%3E%3Crect%20x%3D%2732%27%20y%3D%2756%27%20width%3D%274%27%20height%3D%274%27%20fill%3D%27%23000000%27%2F%3E%3C%2Fsvg%3E") 0 0, pointer;
+    }
+
+    /* DESKTOP */
+    .desktop {
+      min-height: calc(100vh - 40px);
+      padding: 14px 14px 14px 100px;
+      background:
+        radial-gradient(ellipse at 65% 35%, rgba(0,51,204,0.4) 0%, transparent 55%),
+        radial-gradient(ellipse at 15% 80%, rgba(204,0,0,0.3) 0%, transparent 45%),
+        radial-gradient(ellipse at 85% 10%, rgba(255,215,0,0.2) 0%, transparent 40%),
+        linear-gradient(135deg, #0A246A 0%, #0D2E8A 50%, #08205A 100%);
+      position: relative;
+    }
+    .desktop::before {
+      content: '';
+      position: fixed; inset: 0;
+      background-image:
+        radial-gradient(1px 1px at 25px 25px, rgba(255,255,255,0.12) 0%, transparent 100%),
+        radial-gradient(1px 1px at 75px 65px, rgba(255,255,255,0.08) 0%, transparent 100%);
+      background-size: 100px 100px;
+      pointer-events: none; z-index: 0;
+    }
+
+    /* DESKTOP ICONS */
+    .desktop-icons {
+      position: fixed;
+      top: 14px; left: 10px;
+      z-index: 10;
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+    .d-icon {
+      display: flex; flex-direction: column; align-items: center;
+      gap: 3px; cursor: pointer; padding: 5px; border-radius: 2px;
+      width: 72px; text-align: center;
+    }
+    .d-icon:hover { background: rgba(255,255,255,0.18); }
+    .d-icon .ico { font-size: 30px; filter: drop-shadow(1px 2px 2px rgba(0,0,0,0.7)); }
+    .d-icon .lbl { color: white; font-size: 10px; text-shadow: 1px 1px 2px black, -1px -1px 2px black; line-height: 1.3; }
+
+    /* XP WINDOW */
+    .xp-win {
+      position: relative; z-index: 1;
+      background: var(--silver);
+      border: 1px solid #0A246A;
+      border-radius: 8px 8px 4px 4px;
+      box-shadow: 5px 5px 15px rgba(0,0,0,0.55), inset 0 0 0 1px rgba(255,255,255,0.4);
+      margin-bottom: 18px;
+      overflow: hidden;
+    }
+
+    /* TITLE BAR */
+    .tb {
+      background: var(--xp-title);
+      padding: 5px 7px 6px;
+      display: flex; align-items: center; justify-content: space-between;
+      border-radius: 7px 7px 0 0;
+      position: relative; overflow: hidden; user-select: none;
+    }
+    .tb::before {
+      content: '';
+      position: absolute; top: 0; left: 0; right: 0; height: 13px;
+      background: linear-gradient(180deg, rgba(255,255,255,0.38) 0%, transparent 100%);
+      border-radius: 7px 7px 0 0; pointer-events: none;
+    }
+    .tb-l { display: flex; align-items: center; gap: 6px; }
+    .tb-ico { font-size: 14px; }
+    .tb-txt { color: white; font-weight: bold; font-size: 12px; text-shadow: 1px 1px 2px rgba(0,0,0,0.5); }
+    .tb-btns { display: flex; gap: 3px; }
+    .wbtn {
+      width: 22px; height: 22px; border-radius: 4px;
+      border: 1px solid rgba(0,0,0,0.4);
+      display: flex; align-items: center; justify-content: center;
+      font-size: 10px; font-weight: bold; cursor: pointer;
+      position: relative; overflow: hidden;
+    }
+    .wbtn::before {
+      content: ''; position: absolute; top: 0; left: 0; right: 0; height: 50%;
+      background: rgba(255,255,255,0.28); pointer-events: none;
+    }
+    .wbtn-m, .wbtn-x2 { background: linear-gradient(180deg,#6DB3F2,#3D91E0 45%,#2980D9 50%,#4499E8 100%); color:white; }
+    .wbtn-c { background: linear-gradient(180deg,#F06060,#D42020 45%,#C01010 50%,#D83030 100%); color:white; }
+    .wbtn:hover { filter: brightness(1.15); }
+    .wbtn:active { filter: brightness(0.9); }
+
+    /* MENU BAR */
+    .mbar {
+      background: var(--silver); border-bottom: 1px solid #ACA899;
+      padding: 2px 4px; display: flex; gap: 1px;
+    }
+    .mi {
+      padding: 3px 8px; font-size: 11px; cursor: pointer;
+      border-radius: 2px; color: #1a1a1a;
+    }
+    .mi:hover { background: var(--blue); color: white; }
+
+    /* TOOLBAR */
+    .tbar {
+      display: flex; align-items: center; gap: 2px;
+      padding: 3px 6px; background: var(--silver);
+      border-bottom: 1px solid #ACA899;
+    }
+    .tbtn {
+      background: var(--xp-btn); border: 1px solid #8E8E8E;
+      border-radius: 3px; padding: 3px 10px; font-size: 10px;
+      cursor: pointer; display: flex; align-items: center; gap: 3px;
+      white-space: nowrap; font-family: Tahoma, sans-serif;
+    }
+    .tbtn:hover { background: var(--xp-btn-h); border-color: var(--blue); }
+    .tbtn:active { filter: brightness(0.95); }
+    .tsep { width: 1px; height: 20px; background: #ACA899; margin: 0 3px; }
+
+    /* ADDRESS BAR */
+    .abar {
+      display: flex; align-items: center; gap: 6px;
+      background: var(--silver); padding: 3px 6px;
+      border-bottom: 1px solid #ACA899;
+    }
+    .albl { font-size: 10px; color: #555; }
+    .afield {
+      flex: 1; background: white; border: 1px solid #7F9DB9;
+      border-radius: 2px; padding: 2px 6px; font-size: 11px;
+      font-family: Tahoma, sans-serif; color: var(--blue);
+    }
+    .ago {
+      background: var(--xp-btn); border: 1px solid #7F9DB9;
+      border-radius: 2px; padding: 2px 8px; font-size: 10px; cursor: pointer;
+      font-family: Tahoma, sans-serif;
+    }
+    .ago:hover { background: var(--xp-btn-h); }
+
+    /* STATUS BAR */
+    .sbar {
+      background: var(--silver); border-top: 1px solid #ACA899;
+      padding: 2px 8px; display: flex; gap: 8px;
+      font-size: 10px; color: #555;
+    }
+    .ss { border: 1px inset #ACA899; padding: 1px 8px; background: var(--silver); }
+
+    /* WINDOW CONTENT */
+    .wcont { padding: 14px; }
+
+    /* ── HERO ── */
+    .hero-grid {
+      display: grid; grid-template-columns: 1fr 190px; gap: 18px; align-items: start;
+    }
+    .hero-title {
+      font-family: 'VT323', monospace;
+      font-size: 58px; line-height: 1; letter-spacing: 0.02em;
+      color: var(--blue);
+      text-shadow: 2px 2px 0 var(--yellow), 4px 4px 0 rgba(0,0,0,0.2);
+      margin-bottom: 8px;
+    }
+    .hero-title .r { color: var(--red); }
+    .hero-sub {
+      font-size: 11px; color: #333; line-height: 1.7; margin-bottom: 12px; max-width: 400px;
+    }
+    .badge-row { display: flex; gap: 5px; flex-wrap: wrap; margin-bottom: 14px; }
+    .badge {
+      border-radius: 10px; padding: 3px 10px; font-size: 10px; font-weight: bold;
+      border: 1px solid; display: flex; align-items: center; gap: 3px;
+    }
+    .badge-r { background: linear-gradient(180deg,#FF5555,#CC0000 50%,#AA0000 51%,#CC2222); color:white; border-color:#880000; }
+    .badge-b { background: linear-gradient(180deg,#5588FF,#0033CC 50%,#0022AA 51%,#1133CC); color:white; border-color:#001188; }
+    .badge-y { background: linear-gradient(180deg,#FFE566,#FFD700 50%,#E6B800 51%,#FFD700); color:#333; border-color:#CC9900; }
+
+    .xbtn {
+      display: inline-flex; align-items: center; gap: 5px;
+      font-weight: bold; font-size: 11px; padding: 5px 14px;
+      border-radius: 4px; cursor: pointer;
+      box-shadow: inset 0 1px rgba(255,255,255,0.3), 1px 1px 3px rgba(0,0,0,0.3);
+      text-shadow: 1px 1px 1px rgba(0,0,0,0.4);
+      font-family: Tahoma, sans-serif; border: 1px solid;
+    }
+    .xbtn:hover { filter: brightness(1.1); }
+    .xbtn:active { filter: brightness(0.9); }
+    .xbtn-g { background: linear-gradient(180deg,#76C442,#3A9C1C 45%,#2E8015 50%,#4AAD28); color:white; border-color:#1E6010; }
+    .xbtn-b { background: linear-gradient(180deg,#5588FF,#0033CC 45%,#0022AA 50%,#1133CC); color:white; border-color:#001188; }
+    .xbtn-r { background: linear-gradient(180deg,#FF5555,#CC0000 45%,#AA0000 50%,#CC2222); color:white; border-color:#880000; }
+
+    /* Hero side panel */
+    .hpanel {
+      background: white; border: 1px solid #7F9DB9; border-radius: 3px; overflow: hidden;
+    }
+    .hpanel-hd { background: linear-gradient(180deg,#5B9BD5,#3A7FC1); color:white; font-weight:bold; font-size:10px; padding:4px 8px; text-shadow:1px 1px 1px rgba(0,0,0,0.4); }
+    .hpanel-body { padding: 5px; }
+    .pitem {
+      display: flex; align-items: center; gap: 7px;
+      padding: 4px 6px; border-radius: 2px; cursor: pointer; font-size: 11px;
+    }
+    .pitem:hover { background: #D6E4F5; }
+    .pitem.sel { background: #316AC5; color: white; }
+    .pico { font-size: 17px; }
+
+
+
+    /* ── WORK GRID ── */
+    .proj-grid {
+      display: grid; grid-template-columns: repeat(3,1fr); gap: 8px;
+    }
+    .ptile {
+      background: white; border: 1px solid #7F9DB9; border-radius: 3px;
+      overflow: hidden; cursor: pointer; transition: border-color 0.12s, box-shadow 0.12s;
+    }
+    .ptile:hover { border-color: var(--blue); box-shadow: 0 0 0 1px var(--blue); }
+    .ptile.sel { border-color: var(--blue); background: #D6E4F5; }
+    .tprev {
+      height: 88px; display: flex; align-items: center; justify-content: center;
+      font-size: 34px; position: relative; overflow: hidden;
+    }
+    .tprev::after {
+      content: ''; position: absolute; inset: 0;
+      background: repeating-linear-gradient(45deg, rgba(255,255,255,0.06) 0px, rgba(255,255,255,0.06) 1px, transparent 1px, transparent 8px);
+    }
+    .tp-r1 { background: linear-gradient(135deg,#CC0000,#FF4444); }
+    .tp-b1 { background: linear-gradient(135deg,#0033CC,#4477FF); }
+    .tp-y1 { background: linear-gradient(135deg,#BB7700,#FFD700); }
+    .tp-r2 { background: linear-gradient(135deg,#880000,#CC0000); }
+    .tp-b2 { background: linear-gradient(135deg,#001188,#0033CC); }
+    .tp-y2 { background: linear-gradient(135deg,#997700,#FFBB00); }
+    .tinfo { padding: 5px 7px 7px; border-top: 1px solid #E0E0E0; }
+    .tname { font-weight: bold; font-size: 11px; color: #1a1a1a; }
+    .tcat { font-size: 9px; color: #777; margin-top: 1px; }
+
+    /* ── ABOUT ── */
+    .about-grid { display: grid; grid-template-columns: 175px 1fr; gap: 14px; }
+    .aside {
+      background: white; border: 1px solid #7F9DB9; border-radius: 3px; overflow: hidden;
+    }
+    .aside-hd { background: var(--blue); color:white; font-weight:bold; font-size:10px; padding:4px 8px; text-shadow:1px 1px 1px rgba(0,0,0,0.4); }
+    .aside-body { padding: 8px; }
+    .avatar {
+      width: 100%; aspect-ratio: 1; background: linear-gradient(135deg,var(--blue),#4477FF);
+      border-radius: 3px; border: 2px solid #7F9DB9;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 50px; margin-bottom: 8px;
+    }
+    .aname { font-weight:bold; font-size:12px; text-align:center; color:var(--blue); margin-bottom:3px; }
+    .atag { font-size:9px; color:#777; text-align:center; font-style:italic; }
+    .alinks { margin-top:9px; display:flex; flex-direction:column; gap:2px; }
+    .alink {
+      display:flex; align-items:center; gap:5px; font-size:10px;
+      color:var(--blue); cursor:pointer; padding:2px 4px; border-radius:2px; text-decoration:underline;
+    }
+    .alink:hover { background:#D6E4F5; }
+
+    .sec-title {
+      font-weight:bold; font-size:13px; color:var(--blue);
+      border-bottom:2px solid var(--blue); padding-bottom:3px; margin-bottom:8px;
+    }
+    .atext { font-size:11px; line-height:1.7; color:#333; margin-bottom:14px; }
+    .skills-g { display:grid; grid-template-columns:1fr 1fr; gap:6px; margin-bottom:14px; }
+    .sitem .slbl { font-size:10px; margin-bottom:2px; display:flex; justify-content:space-between; }
+    .strack { height:10px; background:#D4D0C8; border:1px inset #808080; border-radius:1px; overflow:hidden; }
+    .sfill {
+      height:100%; background:linear-gradient(90deg,#3A9C1C,#76C442);
+      position:relative;
+    }
+    .sfill::after { content:''; position:absolute; top:0; left:0; right:0; height:50%; background:rgba(255,255,255,0.28); }
+    .stats3 { display:grid; grid-template-columns:repeat(3,1fr); gap:7px; }
+    .sbox {
+      background:white; border:1px solid #7F9DB9; border-radius:3px;
+      padding:8px; text-align:center;
+    }
+    .snum { font-family:'VT323',monospace; font-size:30px; line-height:1; }
+    .slabel { font-size:9px; color:#666; text-transform:uppercase; letter-spacing:0.05em; }
+
+    /* ── CONTACT / FORM ── */
+    .form-g { display:flex; flex-direction:column; gap:10px; }
+    .fgrid { display:grid; grid-template-columns:64px 1fr; gap:6px; align-items:center; }
+    .flbl { font-size:11px; font-weight:bold; color:#555; text-align:right; }
+    .finput {
+      border:1px solid #7F9DB9; border-radius:2px; padding:4px 6px;
+      font-size:11px; font-family:Tahoma,sans-serif; background:white; outline:none;
+    }
+    .finput:focus { border-color:var(--blue); box-shadow:0 0 0 2px rgba(0,51,204,0.18); }
+    .ftarea { height:75px; resize:vertical; }
+    .fbtns { display:flex; gap:6px; justify-content:flex-end; margin-top:4px; }
+    .dbtn {
+      background:var(--xp-btn); border:1px solid #7F9DB9; border-radius:3px;
+      padding:4px 18px; font-size:11px; cursor:pointer; font-family:Tahoma,sans-serif;
+    }
+    .dbtn:hover { background:var(--xp-btn-h); border-color:var(--blue); }
+
+    /* ── TASKBAR ── */
+    .taskbar {
+      position: fixed; bottom:0; left:0; right:0; height:40px;
+      background: var(--taskbar);
+      box-shadow: 0 -1px rgba(255,255,255,0.2), inset 0 1px rgba(255,255,255,0.12);
+      display:flex; align-items:center; z-index:1000; padding:0 4px; gap:4px;
+    }
+    .start {
+      height:32px;
+      background: linear-gradient(180deg,#5DAE29,#3A9C0E 45%,#2E8008 50%,#4AAD1C);
+      border:1px solid #1E6010; border-radius:0 12px 12px 0;
+      padding:0 14px 0 10px;
+      display:flex; align-items:center; gap:6px;
+      cursor:pointer; color:white; font-weight:bold; font-size:13px;
+      text-shadow:1px 1px 1px rgba(0,0,0,0.5);
+      box-shadow:inset 0 1px rgba(255,255,255,0.4), 1px 0 3px rgba(0,0,0,0.4);
+      font-style:italic; letter-spacing:0.03em; font-family:Tahoma,sans-serif;
+    }
+    .start:hover { filter:brightness(1.1); }
+    .tbar-sep { width:1px; height:28px; background:rgba(255,255,255,0.15); margin:0 4px; }
+    .tbar-wins { flex:1; display:flex; gap:3px; overflow:hidden; }
+    .twin {
+      height:28px;
+      background:linear-gradient(180deg,#3A70CC,#2458B5);
+      border:1px solid rgba(255,255,255,0.2); border-radius:3px;
+      padding:0 10px; display:flex; align-items:center; gap:5px;
+      font-size:11px; color:white; cursor:pointer;
+      white-space:nowrap; max-width:155px; overflow:hidden; text-overflow:ellipsis;
+      font-family:Tahoma,sans-serif;
+    }
+    .twin:hover { background:linear-gradient(180deg,#4A80DC,#3468C5); }
+    .twin.act { background:linear-gradient(180deg,#1A4A9C,#2458B5); border-color:rgba(0,0,0,0.3); }
+    .tray {
+      display:flex; align-items:center; gap:4px;
+      background:rgba(0,0,0,0.25); border:1px solid rgba(255,255,255,0.1);
+      border-radius:3px; padding:2px 8px; height:28px;
+      font-size:10px; color:white;
+    }
+    .tray-t { font-size:10px; font-weight:bold; }
+
+    /* DIALOG */
+    .overlay { position:fixed; inset:0; background:rgba(0,0,0,0.45); z-index:9998; display:none; }
+    .overlay.on { display:block; }
+    .dialog {
+      position:fixed; top:50%; left:50%; transform:translate(-50%,-50%);
+      z-index:9999; width:340px; display:none;
+      background:var(--silver); border:1px solid #0A246A;
+      border-radius:8px 8px 4px 4px; box-shadow:5px 5px 14px rgba(0,0,0,0.6);
+    }
+    .dialog.on { display:block; }
+    .dlg-body { padding:16px; text-align:center; }
+    .dlg-ico { font-size:36px; margin-bottom:8px; }
+    .dlg-msg { font-size:11px; color:#1a1a1a; margin-bottom:16px; line-height:1.5; }
+    .dlg-btns { display:flex; justify-content:center; gap:8px; }
+
+    /* ── XP IMAGE VIEWER MODAL ── */
+    .viewer-overlay {
+      position: fixed; inset: 0; background: rgba(0,0,0,0.6);
+      z-index: 8000; display: none; align-items: center; justify-content: center;
+    }
+    .viewer-overlay.on { display: flex; }
+    .viewer-win {
+      background: var(--silver);
+      border: 1px solid #0A246A;
+      border-radius: 8px 8px 4px 4px;
+      box-shadow: 6px 6px 20px rgba(0,0,0,0.7), inset 0 0 0 1px rgba(255,255,255,0.4);
+      width: min(820px, 95vw);
+      max-height: 90vh;
+      display: flex; flex-direction: column;
+      overflow: hidden;
+    }
+    .viewer-body {
+      display: grid;
+      grid-template-columns: 1fr 260px;
+      flex: 1;
+      overflow: hidden;
+      min-height: 0;
+    }
+    /* Left: image area */
+    .viewer-img-pane {
+      background: #1a1a1a;
+      display: flex; flex-direction: column;
+      overflow: hidden;
+    }
+    .viewer-img-toolbar {
+      background: #2a2a2a;
+      padding: 4px 8px;
+      display: flex; align-items: center; gap: 4px;
+      border-bottom: 1px solid #000;
+      flex-shrink: 0;
+    }
+    .viewer-img-toolbar button {
+      background: #444; border: 1px solid #666; color: white;
+      font-size: 10px; padding: 2px 8px; border-radius: 2px;
+      font-family: Tahoma, sans-serif; cursor: pointer;
+    }
+    .viewer-img-toolbar button:hover { background: #555; }
+    .viewer-main-img-wrap {
+      flex: 1; display: flex; align-items: center; justify-content: center;
+      overflow: hidden; padding: 12px; min-height: 0;
+    }
+    .viewer-main-img {
+      max-width: 100%; max-height: 100%;
+      object-fit: contain;
+      display: block;
+    }
+    /* Filmstrip */
+    .viewer-filmstrip {
+      background: #111; border-top: 1px solid #000;
+      padding: 6px 8px; display: flex; gap: 6px;
+      overflow-x: auto; flex-shrink: 0;
+    }
+    .viewer-filmstrip::-webkit-scrollbar { height: 6px; }
+    .viewer-filmstrip::-webkit-scrollbar-track { background: #222; }
+    .viewer-filmstrip::-webkit-scrollbar-thumb { background: #555; }
+    .vthumb {
+      width: 64px; height: 64px; flex-shrink: 0;
+      object-fit: cover;
+      border: 2px solid #444; border-radius: 2px;
+      cursor: pointer; opacity: 0.7; transition: opacity 0.15s, border-color 0.15s;
+    }
+    .vthumb:hover { opacity: 1; }
+    .vthumb.active { border-color: var(--blue); opacity: 1; }
+
+    /* Right: info pane */
+    .viewer-info-pane {
+      border-left: 1px solid #ACA899;
+      display: flex; flex-direction: column;
+      overflow-y: auto; background: var(--silver);
+    }
+    .viewer-info-section {
+      padding: 10px 12px;
+      border-bottom: 1px solid #ACA899;
+    }
+    .viewer-info-title {
+      font-weight: bold; font-size: 13px; color: var(--blue);
+      border-bottom: 2px solid var(--blue); padding-bottom: 3px; margin-bottom: 8px;
+    }
+    .viewer-project-name {
+      font-family: 'VT323', monospace; font-size: 26px; color: var(--navy, #0A246A);
+      line-height: 1; margin-bottom: 4px;
+    }
+    .viewer-cat-badge {
+      display: inline-block;
+      background: var(--red); color: white;
+      font-size: 9px; font-weight: bold; letter-spacing: 0.08em;
+      padding: 2px 7px; border-radius: 99px; margin-bottom: 8px;
+    }
+    .viewer-desc {
+      font-size: 11px; line-height: 1.7; color: #333;
+    }
+    .viewer-meta-row {
+      display: flex; flex-direction: column; gap: 5px;
+    }
+    .viewer-meta-item {
+      display: flex; gap: 6px; font-size: 10px;
+    }
+    .viewer-meta-label { font-weight: bold; color: #555; min-width: 55px; }
+    .viewer-meta-val { color: #333; }
+    .viewer-tags { display: flex; flex-wrap: wrap; gap: 4px; margin-top: 4px; }
+    .viewer-tag {
+      background: var(--xp-btn); border: 1px solid #7F9DB9;
+      border-radius: 10px; padding: 2px 8px; font-size: 9px; font-weight: bold;
+    }
+    .viewer-nav-row {
+      display: flex; gap: 6px; padding: 10px 12px;
+      border-top: 1px solid #ACA899; margin-top: auto; flex-shrink: 0;
+    }
+    .viewer-nav-row button {
+      flex: 1; font-family: Tahoma, sans-serif; font-size: 10px;
+    }
+
+    /* BLINK */
+    @keyframes blink { 0%,100%{opacity:1} 50%{opacity:0} }
+    .blink { animation:blink 1s step-end infinite; }
+
+    /* SCROLL ANIMATIONS */
+    .xp-win {
+      transition: transform 0.55s cubic-bezier(0.34, 1.56, 0.64, 1), opacity 0.4s ease;
+    }
+    .xp-win.win-hidden {
+      opacity: 0;
+      transform: scale(0.91) translateY(28px);
+    }
+    .xp-win.win-visible {
+      opacity: 1;
+      transform: scale(1) translateY(0);
+    }
+
+    /* SCROLLBAR */
+    ::-webkit-scrollbar { width:16px; }
+    ::-webkit-scrollbar-track { background:#D4D0C8; border:1px solid #ACA899; }
+    ::-webkit-scrollbar-thumb { background:linear-gradient(90deg,#E0DDD5,#C8C5BD,#E0DDD5); border:1px solid #ACA899; }
+
+    @media(max-width:680px){
+      .desktop{ padding:10px; }
+      .desktop-icons{ display:none; }
+      .hero-grid,.about-grid{ grid-template-columns:1fr; }
+      .hpanel,.aside{ display:none; }
+      .proj-grid{ grid-template-columns:repeat(2,1fr); }
+      .skills-g{ grid-template-columns:1fr; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- OVERLAY + DIALOG -->
+<div class="overlay" id="ov" onclick="dlgClose()"></div>
+<div class="dialog" id="dlg">
+  <div class="tb">
+    <div class="tb-l"><span class="tb-ico">ℹ️</span><span class="tb-txt">Noah Scott Portfolio</span></div>
+    <div class="tb-btns"><div class="wbtn wbtn-c" onclick="dlgClose()">✕</div></div>
+  </div>
+  <div class="dlg-body">
+    <div class="dlg-ico">💬</div>
+    <div class="dlg-msg" id="dlg-msg">Hello!</div>
+    <div class="dlg-btns">
+      <button class="dbtn" onclick="dlgClose()">OK</button>
+      <button class="dbtn" onclick="dlgClose()">Cancel</button>
+    </div>
+  </div>
+</div>
+
+<!-- XP IMAGE VIEWER -->
+<div class="viewer-overlay" id="viewer-overlay" onclick="viewerClickOutside(event)">
+  <div class="viewer-win" id="viewer-win">
+    <!-- Title bar -->
+    <div class="tb">
+      <div class="tb-l">
+        <span class="tb-ico">🖼️</span>
+        <span class="tb-txt" id="viewer-title">Windows Picture and Fax Viewer</span>
+      </div>
+      <div class="tb-btns">
+        <div class="wbtn wbtn-m">─</div>
+        <div class="wbtn wbtn-x2">□</div>
+        <div class="wbtn wbtn-c" onclick="closeViewer()">✕</div>
+      </div>
+    </div>
+    <!-- Menu -->
+    <div class="mbar">
+      <span class="mi">File</span><span class="mi">Edit</span>
+      <span class="mi">View</span><span class="mi">Help</span>
+    </div>
+    <!-- Body -->
+    <div class="viewer-body">
+      <!-- Image pane -->
+      <div class="viewer-img-pane">
+        <div class="viewer-img-toolbar">
+          <button onclick="viewerPrev()">◀ Prev</button>
+          <button onclick="viewerNext()">Next ▶</button>
+          <span style="color:#aaa;font-size:10px;margin-left:6px;" id="viewer-img-counter">1 of 1</span>
+        </div>
+        <div class="viewer-main-img-wrap">
+          <img class="viewer-main-img" id="viewer-main-img" src="" alt="" />
+        </div>
+        <div class="viewer-filmstrip" id="viewer-filmstrip"></div>
+      </div>
+      <!-- Info pane -->
+      <div class="viewer-info-pane">
+        <div class="viewer-info-section">
+          <div class="viewer-project-name" id="viewer-proj-name"></div>
+          <div class="viewer-cat-badge" id="viewer-cat"></div>
+          <p class="viewer-desc" id="viewer-desc"></p>
+        </div>
+        <div class="viewer-info-section">
+          <div class="viewer-info-title">📋 File Details</div>
+          <div class="viewer-meta-row" id="viewer-meta"></div>
+        </div>
+        <div class="viewer-info-section">
+          <div class="viewer-info-title">🏷️ Tags</div>
+          <div class="viewer-tags" id="viewer-tags"></div>
+        </div>
+        <div class="viewer-nav-row">
+          <button class="dbtn" onclick="closeViewer()">✕ Close</button>
+          <button class="xbtn xbtn-b" style="font-size:10px;padding:4px 10px;" onclick="dlg('Contact Noah to discuss this project!\nUse the contact form below.')">📩 Inquire</button>
+        </div>
+      </div>
+    </div>
+    <!-- Status -->
+    <div class="sbar">
+      <span class="ss" id="viewer-status">Ready</span>
+      <span class="ss">🖼️ Windows Picture and Fax Viewer</span>
+    </div>
+  </div>
+</div>
+
+<!-- DESKTOP -->
+<div class="desktop">
+
+  <!-- Icons -->
+  <div class="desktop-icons">
+    <div class="d-icon" onclick="dlg('Welcome to My Portfolio!\nNOAH SCOTT OS — Version 2026')">
+      <div class="ico">🖥️</div><div class="lbl">My Portfolio</div>
+    </div>
+    <div class="d-icon" onclick="dlg('Noah Scott\nGraphic Designer · Motion Artist\nBrand Builder')">
+      <div class="ico">📁</div><div class="lbl">My Documents</div>
+    </div>
+    <div class="d-icon" onclick="dlg('Recycle Bin is empty.\nNo bad designs here!')">
+      <div class="ico">🗑️</div><div class="lbl">Recycle Bin</div>
+    </div>
+    <div class="d-icon" onclick="scroll('contact-win')">
+      <div class="ico">✉️</div><div class="lbl">Contact Noah</div>
+    </div>
+    <div class="d-icon" onclick="window.open('https://www.instagram.com/scootsketch/profilecard/?igsh=NXJkcWxyNTF5bzdy')">
+      <div class="ico">📸</div><div class="lbl">Instagram</div>
+    </div>
+  </div>
+
+  <!-- ═══ HERO WINDOW ═══ -->
+  <div class="xp-win">
+    <div class="tb">
+      <div class="tb-l"><span class="tb-ico">🌟</span><span class="tb-txt">Noah Scott — Designer — [Portfolio] - Windows Internet Explorer</span></div>
+      <div class="tb-btns">
+        <div class="wbtn wbtn-m">─</div>
+        <div class="wbtn wbtn-x2">□</div>
+        <div class="wbtn wbtn-c" onclick="dlg('Are you sure you want to close?\nYou\'ll miss all the cool work! 😄')">✕</div>
+      </div>
+    </div>
+    <div class="mbar">
+      <span class="mi">File</span><span class="mi">Edit</span><span class="mi">View</span>
+      <span class="mi">Favorites</span><span class="mi">Tools</span><span class="mi">Help</span>
+    </div>
+    <div class="tbar">
+      <button class="tbtn">◀ Back</button>
+      <button class="tbtn">▶ Forward</button>
+      <button class="tbtn">🔄 Refresh</button>
+      <button class="tbtn">🏠 Home</button>
+      <div class="tsep"></div>
+      <button class="tbtn">🔍 Search</button>
+      <button class="tbtn">⭐ Favorites</button>
+      <button class="tbtn">📰 History</button>
+    </div>
+    <div class="abar">
+      <span class="albl">Address</span>
+      <div class="afield">http://www.noahscott.com/portfolio/index.htm</div>
+      <button class="ago">Go ▶</button>
+    </div>
+    <div class="wcont">
+      <div class="hero-grid">
+        <div>
+          <h1 class="hero-title">NOAH <span class="r">SCOTT</span></h1>
+          <p class="hero-sub">
+            Graphic designer. Motion artist. Brand builder.<br/>
+            Crafting visuals that feel alive — one pixel at a time.<br/>
+            <span style="color:var(--red);font-weight:bold;">Available for projects!</span>
+            <span class="blink" style="color:var(--red);">█</span>
+          </p>
+          <div class="badge-row">
+            <span class="badge badge-r">🎨 Graphic Design</span>
+            <span class="badge badge-b">🎬 Motion & Video</span>
+            <span class="badge badge-y">✦ Branding</span>
+          </div>
+          <div style="display:flex;gap:7px;flex-wrap:wrap;">
+            <button class="xbtn xbtn-b" onclick="scroll('work-win')">📂 View My Work</button>
+            <button class="xbtn xbtn-r" onclick="scroll('contact-win')">✉️ Contact Me</button>
+          </div>
+        </div>
+        <div class="hpanel">
+          <div class="hpanel-hd">📁 Quick Links</div>
+          <div class="hpanel-body">
+            <div class="pitem sel" onclick="scroll('work-win')"><span class="pico">🖼️</span> My Work</div>
+            <div class="pitem" onclick="scroll('about-win')"><span class="pico">👤</span> About Me</div>
+            <div class="pitem" onclick="scroll('contact-win')"><span class="pico">✉️</span> Contact</div>
+            <div class="pitem" onclick="dlg('Résumé download\ncoming soon!')"><span class="pico">📄</span> Résumé</div>
+            <div class="pitem" onclick="window.open('https://www.instagram.com/scootsketch/profilecard/?igsh=NXJkcWxyNTF5bzdy')"><span class="pico">📸</span> Instagram</div>
+            <div class="pitem" onclick="window.open('https://www.linkedin.com/in/noah-scott19')"><span class="pico">💼</span> LinkedIn</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="sbar">
+      <span class="ss">✅ Done</span>
+      <span class="ss">🔒 Internet</span>
+    </div>
+  </div>
+
+
+
+  <!-- ═══ WORK WINDOW ═══ -->
+  <div class="xp-win" id="work-win">
+    <div class="tb">
+      <div class="tb-l"><span class="tb-ico">🖼️</span><span class="tb-txt">My Work (10 objects) — Windows Explorer</span></div>
+      <div class="tb-btns">
+        <div class="wbtn wbtn-m">─</div>
+        <div class="wbtn wbtn-x2">□</div>
+        <div class="wbtn wbtn-c" onclick="dlg('Nice try! Can\'t close the portfolio 😄')">✕</div>
+      </div>
+    </div>
+    <div class="mbar">
+      <span class="mi">File</span><span class="mi">Edit</span><span class="mi">View</span>
+      <span class="mi">Tools</span><span class="mi">Help</span>
+    </div>
+    <div class="tbar">
+      <button class="tbtn">🖼️ Thumbnails</button>
+      <button class="tbtn">📋 Details</button>
+      <button class="tbtn">🗂️ Icons</button>
+      <div class="tsep"></div>
+      <button class="tbtn" onclick="dlg('Sort by: Awesomeness ↓')">↕ Sort by</button>
+      <button class="tbtn">🔍 Search</button>
+    </div>
+    <div class="wcont">
+      <div style="font-size:11px;color:#555;margin-bottom:10px;">
+        10 object(s) &nbsp;|&nbsp; <span style="color:var(--blue)">Showing all files</span>
+      </div>
+      <div class="proj-grid">
+        <div class="ptile" onclick="openViewer('br-football')">
+          <div class="tprev tp-r1">🏈</div>
+          <div class="tinfo"><div class="tname">BR Football</div><div class="tcat">Graphic Design</div></div>
+        </div>
+        <div class="ptile" onclick="selTile(this);dlg('BR Basketball\nGraphic Design\n\nDynamic visuals for BR\'s\nbasketball content and social.')">
+          <div class="tprev tp-b1">🏀</div>
+          <div class="tinfo"><div class="tname">BR Basketball</div><div class="tcat">Graphic Design</div></div>
+        </div>
+        <div class="ptile" onclick="selTile(this);dlg('BR Baseball\nBranding\n\nBrand work for Bleacher Report\'s\nbaseball vertical.')">
+          <div class="tprev tp-y1">⚾</div>
+          <div class="tinfo"><div class="tname">BR Baseball</div><div class="tcat">Branding</div></div>
+        </div>
+        <div class="ptile" onclick="selTile(this);dlg('Chicago Union\nBranding\n\nFull brand identity for the\nChicago Union ultimate frisbee team.')">
+          <div class="tprev tp-r2">🥏</div>
+          <div class="tinfo"><div class="tname">Chicago Union</div><div class="tcat">Graphic Design</div></div>
+        </div>
+        <div class="ptile" onclick="selTile(this);dlg('BR Brand Guide\nBranding\n\nComprehensive brand guidelines\nand design system for Bleacher Report.')">
+          <div class="tprev tp-b2">📐</div>
+          <div class="tinfo"><div class="tname">BR Brand Guide</div><div class="tcat">Branding</div></div>
+        </div>
+        <div class="ptile" onclick="selTile(this);dlg('BR Soccer\nGraphic Design\n\nGraphics and visual identity\nfor BR\'s soccer coverage.')">
+          <div class="tprev tp-y2">⚽</div>
+          <div class="tinfo"><div class="tname">BR Soccer</div><div class="tcat">Graphic Design</div></div>
+        </div>
+        <div class="ptile" onclick="selTile(this);dlg('BR Advancement\nGraphic Design\n\nAdministration and advancement\nmaterials for Bleacher Report.')">
+          <div class="tprev tp-r1">📊</div>
+          <div class="tinfo"><div class="tname">BR Advancement</div><div class="tcat">Graphic Design</div></div>
+        </div>
+        <div class="ptile" onclick="selTile(this);dlg('Video Reel\nMotion & Video\n\nA compilation of motion graphics\nand video work across projects.')">
+          <div class="tprev tp-b1">🎬</div>
+          <div class="tinfo"><div class="tname">Video Reel</div><div class="tcat">Motion & Video</div></div>
+        </div>
+        <div class="ptile" onclick="selTile(this);dlg('The Real World\nBranding\n\nCampus branding project for\na real-world experience program.')">
+          <div class="tprev tp-y1">🎓</div>
+          <div class="tinfo"><div class="tname">The Real World</div><div class="tcat">Signs & Wall Wraps</div></div>
+        </div>
+        <div class="ptile" onclick="selTile(this);dlg('Personal Work\nMixed\n\nA collection of passion projects\nand personal explorations.')">
+          <div class="tprev tp-r2">✨</div>
+          <div class="tinfo"><div class="tname">Personal Work</div><div class="tcat">Mixed</div></div>
+        </div>
+      </div>
+    </div>
+    <div class="sbar">
+      <span class="ss">10 object(s)</span>
+      <span class="ss">Click any project for details</span>
+      <span class="ss">🔒 Internet</span>
+    </div>
+  </div>
+
+  <!-- ═══ ABOUT WINDOW ═══ -->
+  <div class="xp-win" id="about-win">
+    <div class="tb">
+      <div class="tb-l"><span class="tb-ico">👤</span><span class="tb-txt">About Noah Scott — System Properties</span></div>
+      <div class="tb-btns">
+        <div class="wbtn wbtn-m">─</div>
+        <div class="wbtn wbtn-x2">□</div>
+        <div class="wbtn wbtn-c" onclick="dlg('Closing About window...')">✕</div>
+      </div>
+    </div>
+    <div class="mbar">
+      <span class="mi">File</span><span class="mi">View</span><span class="mi">Help</span>
+    </div>
+    <div class="wcont">
+      <div class="about-grid">
+        <div class="aside">
+          <div class="aside-hd">👤 Noah Scott</div>
+          <div class="aside-body">
+            <div class="avatar">🎨</div>
+            <div class="aname">Noah Scott</div>
+            <div class="atag">Designer · Motion Artist<br/>Brand Builder</div>
+            <div class="alinks">
+              <a class="alink" href="https://noahsc-19.github.io/" target="_blank">🌐 Portfolio</a>
+              <a class="alink" href="https://www.instagram.com/scootsketch/" target="_blank">📸 Instagram</a>
+              <a class="alink" href="https://www.linkedin.com/in/noah-scott19" target="_blank">💼 LinkedIn</a>
+            </div>
+          </div>
+        </div>
+        <div>
+          <div class="sec-title">🧑‍💻 About Me</div>
+          <p class="atext">I'm a multidisciplinary designer with a passion for sports, culture, and bold visual communication. Whether I'm crafting a brand identity, designing social graphics, or directing motion content — I bring energy and intention to every pixel.</p>
+
+          <div class="sec-title">⚡ Skills &amp; Proficiency</div>
+          <div class="skills-g">
+            <div class="sitem">
+              <div class="slbl"><span>Adobe Illustrator</span><span>98%</span></div>
+              <div class="strack"><div class="sfill" style="width:98%"></div></div>
+            </div>
+            <div class="sitem">
+              <div class="slbl"><span>Photoshop</span><span>95%</span></div>
+              <div class="strack"><div class="sfill" style="width:95%"></div></div>
+            </div>
+            <div class="sitem">
+              <div class="slbl"><span>After Effects</span><span>90%</span></div>
+              <div class="strack"><div class="sfill" style="width:90%"></div></div>
+            </div>
+            <div class="sitem">
+              <div class="slbl"><span>Premiere Pro</span><span>85%</span></div>
+              <div class="strack"><div class="sfill" style="width:85%"></div></div>
+            </div>
+            <div class="sitem">
+              <div class="slbl"><span>Constant Contact</span><span>75%</span></div>
+              <div class="strack"><div class="sfill" style="width:75%"></div></div>
+            </div>
+            <div class="sitem">
+              <div class="slbl"><span>Brand Strategy</span><span>92%</span></div>
+              <div class="strack"><div class="sfill" style="width:92%"></div></div>
+            </div>
+          </div>
+
+          <div class="stats3">
+            <div class="sbox"><div class="snum" style="color:var(--red)">4+</div><div class="slabel">Campaigns Launched</div></div>
+            <div class="sbox"><div class="snum" style="color:var(--blue)">700+</div><div class="slabel">Photoshop Layers</div></div>
+            <div class="sbox"><div class="snum" style="color:#3A9C1C">∞</div><div class="slabel">Ideas</div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="sbar">
+      <span class="ss">System: Creative OS v2026</span>
+      <span class="ss">RAM: Fully Caffeinated ☕</span>
+    </div>
+  </div>
+
+  <!-- ═══ CONTACT WINDOW ═══ -->
+  <div class="xp-win" id="contact-win" style="max-width:520px;">
+    <div class="tb">
+      <div class="tb-l"><span class="tb-ico">✉️</span><span class="tb-txt">New Message — Noah Scott Mail</span></div>
+      <div class="tb-btns">
+        <div class="wbtn wbtn-m">─</div>
+        <div class="wbtn wbtn-x2">□</div>
+        <div class="wbtn wbtn-c" onclick="dlg('Message discarded.')">✕</div>
+      </div>
+    </div>
+    <div class="mbar">
+      <span class="mi">File</span><span class="mi">Edit</span><span class="mi">View</span>
+      <span class="mi">Insert</span><span class="mi">Format</span>
+      <span class="mi">Tools</span><span class="mi">Actions</span><span class="mi">Help</span>
+    </div>
+    <div class="tbar">
+      <button type="submit" form="contact-form" class="xbtn xbtn-g" style="font-size:10px;padding:3px 10px;"> Send</button>
+      <div class="tsep"></div>
+      <button class="tbtn">📎 Attach</button>
+      <button class="tbtn">🖊️ Signature</button>
+    </div>
+    <div class="wcont">
+      <form class="form-g" action="https://formspree.io/f/mlgwapqb" method="POST">
+        <div class="fgrid">
+          <span class="flbl">To:</span>
+        <input class="finput" value="hello@noahscott.com" readonly style="color:var(--blue);" />
+        <span class="flbl">From:</span>
+        <input class="finput" type="email" name="email" placeholder="your@email.com" required />
+        <span class="flbl">Subject:</span>
+        <input class="finput" type="text" name="subject" placeholder="Let's work together!" required />
+      </div>
+      <div style="border-top:1px solid #ACA899;padding-top:10px;">
+        <textarea class="finput ftarea" name="message" placeholder="Hi Noah, I'd love to discuss a project..." required></textarea>
+      </div>
+      <div class="fbtns">
+         <button type="reset" class="dbtn">🗑️ Discard</button>
+        <button type="submit" class="xbtn xbtn-r" style="font-size:10px;padding:4px 14px;">📤 Send Message</button>
+      </div>
+    </form>
+  </div>
+ </div>
+
+</div><!-- /desktop -->
+
+<!-- ═══ TASKBAR ═══ -->
+<div class="taskbar">
+  <button class="start" onclick="dlg('🪟 Noah Scott OS\nVersion 2026\n\nAll creative rights reserved.\nPowered by caffeine & passion.')">
+    <span style="font-size:20px;">🪟</span> start
+  </button>
+  <div class="tbar-sep"></div>
+  <div class="tbar-wins">
+    <div class="twin act" onclick="window.scrollTo({top:0,behavior:'smooth'})">🌟 Noah Scott — Portfolio</div>
+    <div class="twin" onclick="scroll('work-win')">🖼️ My Work</div>
+    <div class="twin" onclick="scroll('about-win')">👤 About</div>
+    <div class="twin" onclick="scroll('contact-win')">✉️ New Message</div>
+  </div>
+  <div class="tray">
+    <span>🔊</span><span>🌐</span><span>🔋</span>
+    <span class="tray-t" id="clock">12:00 PM</span>
+  </div>
+</div>
+
+<script>
+  // Clock
+  function tick(){
+    const n=new Date(),h=n.getHours(),m=n.getMinutes(),ap=h>=12?'PM':'AM';
+    document.getElementById('clock').textContent=(h%12||12)+':'+(m<10?'0':'')+m+' '+ap;
+  }
+  tick(); setInterval(tick,1000);
+
+  // Dialog
+  function dlg(msg){
+    document.getElementById('dlg-msg').innerHTML=msg.replace(/\n/g,'<br/>');
+    document.getElementById('dlg').classList.add('on');
+    document.getElementById('ov').classList.add('on');
+  }
+  function dlgClose(){
+    document.getElementById('dlg').classList.remove('on');
+    document.getElementById('ov').classList.remove('on');
+  }
+  // alias
+  window.dlg=dlg;
+
+  // Scroll helper
+  function scroll(id){
+    const el = document.getElementById(id);
+    if (!el) return;
+    // Make sure it's visible before scrolling
+    el.classList.remove('win-hidden');
+    el.classList.add('win-visible');
+    el.scrollIntoView({behavior:'smooth', block:'center'});
+  }
+
+  // Tile select
+  function selTile(el){
+    document.querySelectorAll('.ptile').forEach(t=>t.classList.remove('sel'));
+    el.classList.add('sel');
+  }
+
+
+  // ── PROJECT DATA ──
+  const projects = {
+    'br-football': {
+      name: 'BR Football',
+      category: 'Graphic Design',
+      description: 'Brother Rice Football is one of Chicago\'s premier Catholic League programs, winning the 2025 Illinois State Championship. These gameday graphics were designed to capture the intensity, tradition, and energy of BR football — blending bold typography, gritty photography, and high-impact layouts built for social media.',
+      meta: [
+        { label: 'Client', val: 'Brother Rice Athletics' },
+        { label: 'Type', val: 'Sports Graphic Design' },
+        { label: 'Year', val: '2025' },
+        { label: 'Format', val: 'Social Media / Print' },
+      ],
+      tags: ['Gameday Graphics', 'Sports Design', 'Typography', 'Photo Editing', 'Social Media'],
+      images: [
+        'Gameday_9-26b.jpg',
+        'Gameday_10-3b.jpg',
+        'Gameday_10-3c.jpg',
+        'Gameweek_9-26.jpg',
+      ]
+    }
+    // More projects can be added here later
+  };
+
+  let currentProject = null;
+  let currentImgIndex = 0;
+
+  function openViewer(projectKey) {
+    const p = projects[projectKey];
+    if (!p) return;
+    currentProject = p;
+    currentImgIndex = 0;
+
+    // Set text content
+    document.getElementById('viewer-title').textContent = p.name + ' — Windows Picture and Fax Viewer';
+    document.getElementById('viewer-proj-name').textContent = p.name;
+    document.getElementById('viewer-cat').textContent = p.category;
+    document.getElementById('viewer-desc').textContent = p.description;
+
+    // Meta
+    const metaEl = document.getElementById('viewer-meta');
+    metaEl.innerHTML = p.meta.map(m =>
+      `<div class="viewer-meta-item"><span class="viewer-meta-label">${m.label}:</span><span class="viewer-meta-val">${m.val}</span></div>`
+    ).join('');
+
+    // Tags
+    document.getElementById('viewer-tags').innerHTML =
+      p.tags.map(t => `<span class="viewer-tag">${t}</span>`).join('');
+
+    // Filmstrip
+    const strip = document.getElementById('viewer-filmstrip');
+    strip.innerHTML = p.images.map((img, i) =>
+      `<img class="vthumb${i===0?' active':''}" src="${img}" onclick="viewerSetImg(${i})" alt="" />`
+    ).join('');
+
+    // Main image
+    viewerSetImg(0);
+
+    // Show
+    document.getElementById('viewer-overlay').classList.add('on');
+
+    // Also select the tile
+    document.querySelectorAll('.ptile').forEach(t => t.classList.remove('sel'));
+    document.querySelectorAll('.ptile').forEach(t => {
+      if(t.getAttribute('onclick') && t.getAttribute('onclick').includes(projectKey)) t.classList.add('sel');
+    });
+  }
+
+  function viewerSetImg(idx) {
+    const p = currentProject;
+    if (!p) return;
+    currentImgIndex = idx;
+    document.getElementById('viewer-main-img').src = p.images[idx];
+    document.getElementById('viewer-img-counter').textContent = (idx+1) + ' of ' + p.images.length;
+    document.getElementById('viewer-status').textContent = p.images[idx];
+    document.querySelectorAll('.vthumb').forEach((t,i) => t.classList.toggle('active', i===idx));
+  }
+
+  function viewerPrev() {
+    if (!currentProject) return;
+    const n = (currentImgIndex - 1 + currentProject.images.length) % currentProject.images.length;
+    viewerSetImg(n);
+  }
+
+  function viewerNext() {
+    if (!currentProject) return;
+    const n = (currentImgIndex + 1) % currentProject.images.length;
+    viewerSetImg(n);
+  }
+
+  function closeViewer() {
+    document.getElementById('viewer-overlay').classList.remove('on');
+  }
+
+  function viewerClickOutside(e) {
+    if (e.target === document.getElementById('viewer-overlay')) closeViewer();
+  }
+
+  // SCROLL ANIMATION
+  const wins = document.querySelectorAll('.xp-win');
+  wins.forEach(w => w.classList.add('win-hidden'));
+
+  const winObserver = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.remove('win-hidden');
+        entry.target.classList.add('win-visible');
+      } else {
+        // Shrink back when scrolling away
+        entry.target.classList.remove('win-visible');
+        entry.target.classList.add('win-hidden');
+      }
+    });
+  }, {
+    threshold: 0.08,
+    rootMargin: '0px 0px -40px 0px'
+  });
+
+  wins.forEach(w => winObserver.observe(w));
+
+  // Panel item select
+  document.querySelectorAll('.pitem').forEach(p=>{
+    p.addEventListener('click',function(){
+      document.querySelectorAll('.pitem').forEach(x=>x.classList.remove('sel'));
+      this.classList.add('sel');
+    });
+  });
+</script>
+</body>
+</html>
