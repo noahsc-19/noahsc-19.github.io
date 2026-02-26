@@ -509,17 +509,17 @@
 <body>
 
 <!-- OVERLAY + DIALOG -->
-<div class="overlay" id="ov" onclick="dlgClose()"></div>
+<div class="overlay" id="ov" ="dlgClose()"></div>
 <div class="dialog" id="dlg">
   <div class="tb">
     <div class="tb-l"><span class="tb-ico">ℹ️</span><span class="tb-txt">Noah Scott Portfolio</span></div>
-    <div class="tb-btns"><div class="wbtn wbtn-c" onclick="dlgClose()">✕</div></div>
+    <div class="tb-btns"><div class="wbtn wbtn-c" ="dlgClose()">✕</div></div>
   </div>
   <div class="dlg-body">
     <div class="dlg-ico">💬</div>
     <div class="dlg-msg" id="dlg-msg">Hello!</div>
     <div class="dlg-btns">
-      <button class="dbtn" onclick="dlgClose()">OK</button>
+      <button class="dbtn" ="dlgClose()">OK</button>
       <button class="dbtn" onclick="dlgClose()">Cancel</button>
     </div>
   </div>
@@ -605,7 +605,7 @@
     <div class="d-icon" onclick="scroll('contact-win')">
       <div class="ico">✉️</div><div class="lbl">Contact Noah</div>
     </div>
-    <div class="d-icon" onclick="dlg('Opening Instagram...\n(Add your URL here!)')">
+    <div class="d-icon" onclick="window.open('https://www.instagram.com/scootsketch/profilecard/?igsh=NXJkcWxyNTF5bzdy')">
       <div class="ico">📸</div><div class="lbl">Instagram</div>
     </div>
   </div>
@@ -666,8 +666,8 @@
             <div class="pitem" onclick="scroll('about-win')"><span class="pico">👤</span> About Me</div>
             <div class="pitem" onclick="scroll('contact-win')"><span class="pico">✉️</span> Contact</div>
             <div class="pitem" onclick="dlg('Résumé download\ncoming soon!')"><span class="pico">📄</span> Résumé</div>
-            <div class="pitem" onclick="dlg('Opening Instagram...')"><span class="pico">📸</span> Instagram</div>
-            <div class="pitem" onclick="dlg('Opening LinkedIn...')"><span class="pico">💼</span> LinkedIn</div>
+            <div class="pitem" onclick="window.open('https://www.instagram.com/scootsketch/profilecard/?igsh=NXJkcWxyNTF5bzdy')"><span class="pico">📸</span> Instagram</div>
+            <div class="pitem" onclick="window.open('www.linkedin.com/in/noah-scott19')"><span class="pico">📰</span> LinkedIn</div>
           </div>
         </div>
       </div>
